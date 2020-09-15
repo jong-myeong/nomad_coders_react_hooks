@@ -35,7 +35,7 @@ useState는 state 변수와 해당 변수를 갱신할 수 있는 함수, 두 �
 ```javascript
 import React, { useState } from 'react';
 
-function App() {
+const App = () => {
   // 새로운 state 변수를 선언하고, 이것을 number로 선언
   // number 변수를 갱신할 수 있는 함수로 setNumber를 선언
   // useState(0)으로 number를 0으로 초기화
@@ -45,9 +45,9 @@ function App() {
 
   return (
     <div className="App">
-        <h1>{ number }</h1>
-        <button onClick={ increaseNum }>Increase</button>
-        <button onClick={ decreaseNum }>Decrease</button>
+      <h1>{ number }</h1>
+      <button onClick={ increaseNum }>Increase</button>
+      <button onClick={ decreaseNum }>Decrease</button>
     </div>
   )
 }
@@ -97,4 +97,4 @@ class App extends React.Component {
 export default App;
 ```
 
-함수형 컴포넌트로와 클래스형 컴포넌트를 비교했을 때 굉장히 간결하게 코드를 작성할 수 있음을 알 수 있다
+함수형 컴포넌트와 클래스형 컴포넌트를 비교했을 때 굉장히 간결하게 코드를 작성할 수 있음을 알 수 있다
